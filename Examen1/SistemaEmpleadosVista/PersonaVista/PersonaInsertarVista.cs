@@ -37,9 +37,6 @@ namespace SistemaEmpleadosVista.PersonaVista
 
         }
 
-        private void PersonaInsertarVista_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

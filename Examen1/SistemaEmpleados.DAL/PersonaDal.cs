@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemaEmpleados.MODELOS;
+using SistemaEmpleados.DAL;
 
 
 namespace SistemaEmpleados.DAL
@@ -21,11 +22,10 @@ namespace SistemaEmpleados.DAL
         }
         public void InsetarPersonaDal(EmpleadoDal empleado)
         {
-            string consulta = "insert into persona values('" + empleado.Nombre + "' ," +
+            string consulta = "insert into Empleado values('" + empleado.Nombre + "' ," +
                                                         "'" + empleado.Apellido + "' ," +
-                                                        "'" + empleado.Telefono + "' ," +
-                                                        "'" + persona.Ci + "' ," +
-                                                        "'" + persona.Correo + "' ," +
+                                                        "'" + empleado.estado + "' ," +
+                                                        
                                                          "'Activo')";
             conexion.Ejecutar(consulta);
 

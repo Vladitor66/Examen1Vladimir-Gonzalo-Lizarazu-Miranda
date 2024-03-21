@@ -160,8 +160,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "PersonaInsertarVista";
-            Text = "PersonaInsertarVista";
-            Load += PersonaInsertarVista_Load;
+            Text = "PersonaInsertarVista";            
             ResumeLayout(false);
             PerformLayout();
         }

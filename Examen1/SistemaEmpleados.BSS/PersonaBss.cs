@@ -12,28 +12,28 @@ using SistemaEmpleados.MODELOS;
 namespace SistemaEmpleados.BSS
 {
 
-    public class PersonaBss
+    public class EmpleadoDal
     {
-        PersonaDal dal = new PersonaDAL();
-        public DataTable ListarPersonaBss()
+        EmpleadoDal dal = new EmpleadoDal();
+        public DataTable ListarEmpleadoBss()
         {
-            return dal.ListarPersonasDal();
+            return dal.ListarPersonaDal();
         }
-        public void InsertarPersonaBss(Persona persona)
+        public void InsertarEmpleadoBss(Persona persona)
         {
-            dal.InsetarPersonaDal(persona);
+            dal.InsetarempleadoDal(persona);
         }
         public Persona ObtenerIdBss(int id)
         {
-            return dal.ObtenerPersonaId(id);
+            return dal.ObtenerempleadoId(id);
         }
-        public void EditarPersonaBss(Persona p)
+        public void EditarEmpleadoBss(Persona p)
         {
-            dal.EditarPersonaDal(p);
+            dal.EditarEmpleadoBss(p);
         }
         public void EliminarpersonaBss(int id)
         {
-            dal.EliminarEmpleadoDal(id);
+            dal.EliminarpersonaBss(id);
         }
 
 
